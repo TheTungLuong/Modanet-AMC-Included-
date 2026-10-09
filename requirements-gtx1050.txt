@@ -1,0 +1,5 @@
+# Máy GTX 1050 (Pascal, sm_61) — MODANET_INSTRUCTION.md 9.1b / 9.2
+-r requirements.txt
+torch==2.6.0            # GHIM — bản mới nhất đã bỏ Pascal. Bản cu124 từ PyPI chạy được GTX 1050
+numpy>=1.24,<2          # theo instruction 9.1b
+scipy>=1.10,<2

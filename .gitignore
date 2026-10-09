@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Outputs / model weights / data
+outputs/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+data/
+datasets/
+
+# Khác
+.ipynb_checkpoints/
+.DS_Store
+*.log

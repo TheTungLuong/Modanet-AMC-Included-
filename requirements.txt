@@ -1,0 +1,12 @@
+# Chạy trên mọi máy (Linux / Windows / macOS; CUDA / Apple MPS / CPU).
+# torch: nếu môi trường đã có torch (vd. image PyTorch của vast.ai) thì pip giữ nguyên bản đó.
+#        Chưa có -> pip cài bản mới nhất từ PyPI. GPU đặc biệt:
+#          - GPU Pascal (GTX 10xx, sm_6x): dùng requirements-gtx1050.txt (torch==2.6.0)
+#          - GPU Blackwell (RTX 50xx, sm_12x): torch>=2.7 bản cu128
+#            pip install torch --index-url https://download.pytorch.org/whl/cu128
+torch>=2.1
+numpy>=1.24,<3          # đã test cả 1.26 và 2.2
+scipy>=1.10             # scipy.io.loadmat (chỉ cần khi convert từ .mat)
+tqdm>=4.65
+pytest>=7.4
+matplotlib>=3.7        # đã train xong -> evaluate.py cần để vẽ Fig. 3-6
